@@ -1,0 +1,154 @@
+/* Variáveis para cores */
+:root {
+    --flipper-blue: #1976D2; /* Azul principal (aproximado) */
+    --flipper-dark-blue: #1565C0; 
+    --text-light: white;
+    --text-dark: #333;
+    --background-color: #f7f7f7;
+}
+
+/* Estilos gerais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+body {
+    background-color: var(--background-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 100%; 
+    margin: 0 auto;
+    background-color: white;
+    min-height: 100vh;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos do Cabeçalho (Header) */
+.header {
+    background-color: var(--flipper-blue);
+    color: var(--text-light);
+    padding: 20px 0;
+    position: relative; /* Para posicionar o ícone de menu */
+}
+
+.header-menu-icon {
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    /* Ajuste para que o ícone de menu não atrapalhe a centralização do conteúdo */
+    padding-left: 30px; 
+}
+
+.logo-area {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-icon {
+    font-size: 30px;
+    color: var(--text-light);
+    transform: rotateY(180deg); 
+}
+
+.text-area {
+    text-align: left;
+}
+
+.text-area h1 {
+    font-size: 24px;
+    margin-bottom: 2px;
+}
+
+.tagline, .website-link {
+    font-size: 14px;
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* Estilos do Conteúdo Principal */
+.main-content {
+    padding: 20px;
+    max-width: 1500px;
+}
+
+/* Estilos da Grade de Botões */
+.menu-grid {
+    display: grid;
+    /* Duas colunas de tamanho igual com um pequeno espaçamento */
+    grid-template-columns: 1fr ; 
+    gap: 20px;
+    padding: 100px 0;
+    margin-left: 430px;
+}
+
+.grid-button {
+    display: flex;
+    align-items: center;
+    /* Justify-content space-between garante que o ícone de seta fique na direita */
+    justify-content: space-between; 
+    padding: 15px 12px;
+    background-color: var(--flipper-blue);
+    color: var(--text-light);
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    transition: background-color 0.2s;
+    /* Remove a sombra para ficar mais flat como na imagem */
+    box-shadow: none; 
+    min-height: 50px; /* Garante uma altura mínima para todos */
+    margin-bottom: 15px;
+}
+
+.grid-button:hover {
+    background-color: var(--flipper-dark-blue);
+}
+
+.grid-button span {
+    flex-grow: 1; 
+    text-align: left;
+    margin-left: 10px;
+    /* Permite que o texto quebre a linha se for muito longo */
+    word-break: break-word; 
+}
+
+.icon {
+    font-size: 20px;
+    /* Ajuste de cor para que os ícones fiquem brancos */
+    color: var(--text-light); 
+}
+
+.arrow-icon {
+    font-size: 14px;
+    /* Ícone de play virado para a direita (como um triângulo) */
+    min-width: 14px; /* Garante que ele não encolha */
+}
+
+/* Ajuste de ícones específicos para se parecerem mais com a imagem, se possível */
+.fa-user-tie { /* Vagas */
+    /* Usando o ícone de user-tie para simular o ícone de "Vagas" */
+    transform: scaleX(1.1) translateY(1px); 
+}
+.fa-graduation-cap { /* Infos Anhanguera */
+    /* Usando o ícone de graduation-cap para simular o "A" */
+    transform: rotate(0deg); 
+}
