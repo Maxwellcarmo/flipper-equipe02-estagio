@@ -1,0 +1,143 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fb;
+  color: #333;
+}
+
+.container {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.button-container {
+  padding: 20px;
+  max-width: 600px; /* Ou a largura que você desejar para comportar 4 colunas */
+  margin: 0 auto;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column; /* Para alinhar os botões verticalmente */
+  gap: 30px; /* A distância uniforme entre os botões */
+}
+
+.header {
+  background-color: #0056b3;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.logo-img {
+  height: 70px;
+  border-radius: 50%;
+}
+
+.banner-img {
+  height: 90px; /* Mantém a altura desejada */
+  max-width: 100%; /* Garante que a imagem nunca será maior que o seu contêiner */
+  display: block;
+  margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 3px;
+  text-align: center;
+} 
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.subtitle {
+  font-size: 0.7rem;
+  font-weight: 500;
+  margin-top: 4px;
+  text-align: left;
+}
+
+.address {
+  font-size: 0.7rem;
+  font-style: italic;
+  text-align: left;
+  margin-top: 2px;
+  color: #e0e0e0;
+}
+
+.links{
+  font-size: 1.1rem;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;  
+}
+
+.menu-button {
+  width: 100%;
+  padding: 16px;
+  margin:  0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+  gap: 10px;
+}
+
+.menu-button:hover {
+  background-color: #003f8a;
+}
+
+.menu-button .chevron {
+  margin-left: auto;
+  transition: transform 0.3s ease;
+  font-size: 1.1rem; /* Ajuste o tamanho do ícone */
+   color: white; /* Garante que o ícone seja branco */
+}
+
+.back-button {
+  display: inline-block;
+  max-width: 90px;
+  margin-bottom: 0;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-right: 0px;
+  color: #0056b3;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.back-button:hover {
+  color: #003f8a;
+}
+
+.back-button i {
+  margin-right: 2px;
+}
+

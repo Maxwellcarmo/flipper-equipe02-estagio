@@ -1,0 +1,200 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fb;
+  color: #333;
+}
+
+.container {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.main-content {
+  padding: 20px;
+  max-width: 600px; /* Ou a largura que você desejar para comportar 4 colunas */
+  margin: 0 auto;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column; /* Para alinhar os botões verticalmente */
+  gap: 50px; /* A distância uniforme entre os botões */
+}
+
+.header {
+  background-color: #0056b3;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.logo-img {
+  height: 70px;
+  border-radius: 50%;
+}
+
+.banner-img {
+  height: 90px; /* Mantém a altura desejada */
+  max-width: 100%; /* Garante que a imagem nunca será maior que o seu contêiner */
+  display: block;
+  margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 3px;
+  text-align: center;
+}
+
+.links{
+  font-size: 1.1rem;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;  
+}
+
+.menu-button {
+  width: 100%;
+  padding: 16px;
+  margin:  0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+  gap: 10px;
+}
+
+.menu-button:hover {
+  background-color: #003f8a;
+}
+
+.menu-button .chevron {
+  margin-left: auto;
+  transition: transform 0.3s ease;
+  font-size: 1.1rem; /* Ajuste o tamanho do ícone */
+   color: white; /* Garante que o ícone seja branco */
+}
+
+.menu-button.active .chevron {
+  transform: rotate(90deg);
+}
+
+.sub-options {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out, margin-top 0.3s ease, margin-bottom 0.3s ease;
+    padding: 0 20px; /* Remove padding vertical */
+    margin: 0; /* Remove margem vertical quando escondido */
+    margin-bottom: -50px;
+    display: flex; /* Para alinhar os links como blocos */
+    flex-direction: column;
+    gap: 8px; /* Espaçamento entre os links da subopção */
+    /* Alinhe as subopções abaixo do botão pai */
+    padding-left: 20px; /* Recuo à esquerda para alinhamento */
+    padding-right: 20px; /* Mantém o padding da direita */
+    box-sizing: border-box; /* Garante que padding não adicione à largura total */
+    width: 100%; /* Ocupa a largura total do .main-content */
+}
+
+.sub-options.show {
+  max-height: 1000px;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  padding-top: 0px;  
+}
+
+.sub-options a {
+    display: block;
+    width: 100%;
+    padding: 12px 14px; /* Ajuste o padding para ser mais parecido com a imagem */
+    font-size: 1rem;
+    background-color: #e0e8f0; /* Cor de fundo mais clara para as subopções */
+    color: #333;
+    border-radius: 8px; /* Cantos um pouco menos arredondados, como na imagem */
+    text-align: left;
+    text-decoration: none;
+    transition: background-color 0.2s;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.sub-options a:hover {
+  background-color: #d0d8e0;
+}
+
+@media (max-width: 480px) {
+  .menu-button {
+    font-size: 1rem;
+    padding: 14px;
+  }
+
+  .header h1 {
+    font-size: 1.2rem;
+  }
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.subtitle {
+  font-size: 0.7rem;
+  font-weight: 500;
+  margin-top: 4px;
+  text-align: left;
+}
+
+.address {
+  font-size: 0.7rem;
+  font-style: italic;
+  text-align: left;
+  margin-top: 2px;
+  color: #e0e0e0;
+}
+
+.back-button {
+  display: inline-block;
+  margin-bottom: 20px;
+  padding: 10px 16px;
+  background-color: #499b3e;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  transition: background-color 0.3s;
+}
+
+.back-button:hover {
+  background-color: #003f8a;
+}
+
+.back-button i {
+  margin-right: 8px;
+}
+
