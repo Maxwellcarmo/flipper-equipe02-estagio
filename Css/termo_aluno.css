@@ -1,0 +1,184 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fb;
+  color: #333;
+}
+
+.container {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #0056b3;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.logo-img {
+  height: 70px;
+  border-radius: 50%;
+}
+
+.banner-img {
+  height: 90px; /* Mantém a altura desejada */
+  max-width: 100%; /* Garante que a imagem nunca será maior que o seu contêiner */
+  display: block;
+  margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 3px;
+  text-align: center;
+} 
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.subtitle {
+  font-size: 0.7rem;
+  font-weight: 500;
+  margin-top: 4px;
+  text-align: left;
+}
+
+.address {
+  font-size: 0.7rem;
+  font-style: italic;
+  text-align: left;
+  margin-top: 2px;
+  color: #e0e0e0;
+}
+
+.back-button {
+  max-width: 90px;
+  color: #0056b3;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+}
+
+.back-button:hover {
+  color: #003f8a;
+}
+
+.back-button i {
+  margin-right: 2px;
+}
+
+.container-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+
+.main-title {
+    flex-grow: 1; 
+    text-align: center; /* Centraliza o texto do título */
+    font-size: 1.3em;
+    font-weight: 500;
+    color: #333;
+    margin: 0; /* Remove margens padrão do H1 */
+}
+
+.main-spacer {
+    /* Dá ao elemento um tamanho de referência igual ao do botão 'Voltar' */
+    width: 80px; /* Ajuste este valor para a largura do seu botão "Voltar" */
+    height: 1px; /* Apenas para visualização, pode ser 0 */
+}
+
+.info-section {
+    max-width: 900px; 
+    margin: 20px auto; 
+    padding: 30px;
+    margin-bottom: 30px;
+} 
+
+.section-title {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 25px; /* Espaço abaixo do título da seção */
+    padding-bottom: 10px; /* Espaço interno inferior */
+}
+
+.student-form {
+    display: flex;
+    flex-direction: column; /* Organiza os grupos de campo verticalmente */
+    gap: 40px; /* Espaço entre cada grupo de campo */
+}
+
+.form-group {
+    display: flex; /* Alinha label e input horizontalmente */
+    align-items: center;
+}
+
+.form-group label {
+    width: 150px; /* Largura fixa para os rótulos, para alinhar os inputs */
+    flex-shrink: 0; /* Impede o rótulo de encolher */
+    font-size: 0.95em;
+    color: #555;
+    margin-right: 0px;
+    font-weight: bold;
+}
+
+.form-group input {
+    flex-grow: 1; /* Faz o input preencher o espaço restante */
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px; /* Mais arredondado para o formato oval */
+    background-color: #e0e8f0; /* Fundo cinza claro */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.08); /* Sombra interna sutil */
+    height: 35px; /* Altura do campo */
+    box-sizing: border-box; /* Inclui padding e borda na largura/altura */
+    font-size: 1em;
+    color: #333;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #0073e6; /* Borda azul ao focar */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.08), 0 0 0 2px rgba(0, 115, 230, 0.2);
+}
+
+/* Campo de telefone mais curto */
+.form-group.short-input input {
+    max-width: 250px; /* Limita a largura máxima do campo de telefone */
+}
+
+.button-next {
+    margin-left: 730px;
+    margin-top: 80px;
+    padding: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
