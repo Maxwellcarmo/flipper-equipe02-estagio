@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fb;
+  color: #333;
+}
+
+.container {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #0056b3;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.logo-img {
+  height: 70px;
+  border-radius: 50%;
+}
+
+.banner-img {
+  height: 90px; /* Mantém a altura desejada */
+  max-width: 100%; /* Garante que a imagem nunca será maior que o seu contêiner */
+  display: block;
+  margin: 0 auto; /* Centraliza a imagem horizontalmente */
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 3px;
+  text-align: center;
+} 
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.subtitle {
+  font-size: 0.7rem;
+  font-weight: 500;
+  margin-top: 4px;
+  text-align: left;
+}
+
+.address {
+  font-size: 0.7rem;
+  font-style: italic;
+  text-align: left;
+  margin-top: 2px;
+  color: #e0e0e0;
+}
+
+.back-button {
+  max-width: 90px;
+  color: #0056b3;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+}
+
+.back-button:hover {
+  color: #003f8a;
+}
+
+.back-button i {
+  margin-right: 2px;
+}
+
+.container-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+}
+
+.main-title {
+    flex-grow: 1; 
+    text-align: center; /* Centraliza o texto do título */
+    font-size: 1.3em;
+    font-weight: 500;
+    color: #333;
+    margin: 0; /* Remove margens padrão do H1 */
+}
+
+.main-spacer {
+    width: 80px;
+    height: 1px; 
+}
+
+.container-buttons {
+    max-width: 900px; 
+    margin: 90px auto 0 auto; 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 60px;
+}
+
+.button-enterprise {
+   font-size: 1.1rem;
+  font-weight: bold;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-enterprise:hover {
+  background-color: #003f8a;
+}
+
+.button-autonomo:hover {
+  background-color: #003f8a;
+}
+
+.button-autonomo {
+  font-size: 1.1rem;
+  font-weight: bold;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  padding: 100px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.link-inst {
+  color: white;
+  text-decoration: none;
+}
+
+.large-selection-button {
+    font-size: 1.5rem;
+    font-weight: bold;
+    background-color: #0056b3; 
+    color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 30px;
+    width: 400px; 
+    height: 400px;
+    cursor: pointer;
+}
+
+.large-selection-button:hover {
+    background-color: #003f8a;
+}
+
+
+.button-text {
+    margin-bottom: 5px; 
+}
+
+
+.button-icon {
+    font-size: 2.5em;
+    color: white; 
+}
+
+.container-buttons {
+    max-width: 900px; 
+    margin: 90px auto 0 auto; 
+    display: flex; 
+    justify-content: center; 
+    gap: 60px; 
+}
+
+.container-buttons-align {
+    max-width: 900px; 
+    margin: 40px auto 20px auto; 
+    padding: 0 20px; 
+}
+
+/* 2. AJUSTE DO TÍTULO */
+.section-title {
+    font-size: 1.7em;
+    font-weight: 600;
+    color: #333;
+    text-align: left; 
+    margin: 0;
+}
